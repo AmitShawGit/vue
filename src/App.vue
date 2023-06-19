@@ -3,7 +3,8 @@
   <About_page />
   <Event_Listener />
  <TwoWayBinding />
-
+<InputFields />
+<ConditionalRen />
   </template>
 
   <script>
@@ -11,6 +12,8 @@
   import About_page from "./components/About.vue";
   import Event_Listener from './components/Event.vue';
  import TwoWayBinding from "./components/TwoWayBinding.vue";
+ import InputFields from './components/InputFileds.vue';
+ import ConditionalRen from './components/ConditionalRen.vue';
 
   export default {
   name: "App",
@@ -19,7 +22,8 @@
     About_page,
     Event_Listener,
     TwoWayBinding,
-
+    InputFields,
+  ConditionalRen,
 }
   }
   </script>

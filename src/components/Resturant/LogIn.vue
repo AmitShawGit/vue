@@ -22,13 +22,13 @@ export default {
         async signup() {
             let result = await axios.get(`http://localhost:3000/user?email=${this.email}&password=${this.password}`);
             console.log(result);
-            if(result.status==200 && result.data.length > 0){
+            if (result.status == 200 && result.data.length > 0) {
                 localStorage.setItem("user-info", JSON.stringify(result.data))
-            this.$router.push({ name: "home" })
+                this.$router.push({ name: "home" })
             }
-          else{
-            alert("Something Went Wrong")
-          }
+            else {
+                alert("Something Went Wrong")
+            }
 
         }
     }
